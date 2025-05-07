@@ -71,29 +71,16 @@ Scripts
 ## Start Development Server:
 npm run dev
 
-Build for Production:
-npm run build
+## Build for Production:
+## npm run build
 
-Test Database Connection:
+##Test Database Connection:
 node src/dbTest.js
 
-Troubleshooting
-Database Connection Failed
-Ensure the .env file contains the correct RDS credentials.
-Verify that the RDS instance is publicly accessible and the security group allows your IP.
-AWS CloudWatch Logs Not Working
-Check the IAM permissions for the AWS credentials.
-Verify that the log group /honeypot/auth exists in CloudWatch.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 --
 
-### Key Updates:
-1. Added **AWS RDS** and **CloudWatch** setup instructions.
-2. Included [.env](http://_vscodecontentref_/5) configuration details.
-3. Added troubleshooting steps for common issues.
-4. Updated project structure to reflect your current setup.
 
-Let me know if you'd like further modifications! 🚀
 
