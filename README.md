@@ -6,7 +6,6 @@ A Vue.js application with AWS integration for authentication, logging, and datab
 
 - **Authentication**: User login and logout functionality with secure handling of credentials.
 - **AWS CloudWatch Integration**: Logs user activities (e.g., login/logout) to AWS CloudWatch.
-- **AWS RDS Integration**: Connects to an AWS RDS MySQL database for user data storage.
 - **Vue Router**: Implements routing for navigation between pages (e.g., Dashboard, Profile, Login).
 - **Environment Variables**: Securely manages sensitive credentials using `.env`.
 
@@ -22,12 +21,12 @@ A Vue.js application with AWS integration for authentication, logging, and datab
 
 ## Installation
 
-1. Clone the repository:
+## 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/my-auth-app.git
    cd my-auth-app
    
-2-Install dependencies:
+## 2-Install dependencies:
    npm install
 
 3-Create a .env file in the root directory with the following content:
@@ -40,36 +39,36 @@ DB_PASSWORD=your-database-password
 DB_NAME=your-database-name
 DB_PORT=3306
 
-4-Start the development server:
-npm run dev
+## 4-Start the development server:
+## npm run dev
 
-5-Project Structure
-my-auth-app/
-├── src/
-│   ├── components/        # Vue components (e.g., LoginForm, LogoutButton)
-│   ├── router/            # Vue Router setup
-│   ├── services/          # AWS and authentication services
-│   ├── plugins/           # Vue plugins (e.g., Auth plugin)
-│   ├── db.js              # Database connection setup
-│   ├── dbTest.js          # Database connection testing
-│   ├── App.vue            # Root Vue component
-│   └── [main.js](http://_vscodecontentref_/1)            # Application entry point
-├── .env                   # Environment variables (not committed to GitHub)
-├── [vite.config.js](http://_vscodecontentref_/2)         # Vite configuration
-├── [package.json](http://_vscodecontentref_/3)           # Project dependencies and scripts
-└── [README.md](http://_vscodecontentref_/4)              # Project documentation
+## 5-Project Structure
+## my-auth-app/
+## ├── src/
+## │   ├── components/        # Vue components (e.g., LoginForm, LogoutButton)
+## ├── router/            # Vue Router setup
+##  ├── services/          # AWS and authentication services
+##   ├── plugins/           # Vue plugins (e.g., Auth plugin)
+##  ├── db.js              # Database connection setup
+##  ├── dbTest.js          # Database connection testing
+##  ├── App.vue            # Root Vue component
+##  └── [main.js](http://_vscodecontentref_/1)            # Application entry point
+## ├── .env                   # Environment variables (not committed to GitHub)
+## ├── [vite.config.js](http://_vscodecontentref_/2)         # Vite configuration
+## ├── [package.json](http://_vscodecontentref_/3)           # Project dependencies and scripts
+## └── [README.md](http://_vscodecontentref_/4)              # Project documentation
 
-AWS Setup
-1. AWS RDS
-Create an RDS MySQL instance.
+ ## AWS Setup
+## 1. AWS RDS
+## Create an RDS MySQL instance.
 Enable public access and configure the security group to allow your IP address.
 Add the RDS endpoint and credentials to the .env file.
-2. AWS CloudWatch
+## 2. AWS CloudWatch
 Ensure your AWS IAM user has permissions for logs:CreateLogGroup, logs:CreateLogStream, and logs:PutLogEvents.
 The application will automatically create the log group /honeypot/auth and log stream security-events if they do not exist.
 
 Scripts
-Start Development Server:
+## Start Development Server:
 npm run dev
 
 Build for Production:
